@@ -64,4 +64,6 @@ function draw() {
 
     document.getElementById("weights").innerText = "Weights : " + clickUpgrades.weights.quantity
 
+    document.getElementById("gfuel").innerText = "G-fuel : " + clickUpgrades.gfuel.quantity
+
 }
