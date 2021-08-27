@@ -18,15 +18,24 @@ let autoUpgrades = {
 
 function mine() {
 
-    testosterone += 1
-    draw()
+    testosterone++
 
+    for (let key in clickUpgrades) {
+        let item = clickUpgrades[key]
+
+        testosterone += item.quantity * item.multiplier
+
+    }
+
+
+    draw()
 }
+
 
 function buyWeights() {
     if (testosterone >= 10) {
         clickUpgrades.weights.quantity += 1
-        testosterone -= 10
+        testosterone -= clickUpgrades.weights.price
 
         draw()
 
