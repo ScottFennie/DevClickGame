@@ -1,0 +1,17 @@
+.chad-img {
+    height: 50%;
+    width: 50%;
+}
+
+.bg-img {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/767e3412-1d35-46c8-b38c-48725d3e4481/dae1jkt-135606b8-4a8b-4df6-bd7e-02a606f2266d.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc2N2UzNDEyLTFkMzUtNDZjOC1iMzhjLTQ4NzI1ZDNlNDQ4MVwvZGFlMWprdC0xMzU2MDZiOC00YThiLTRkZjYtYmQ3ZS0wMmE2MDZmMjI2NmQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jYxLAAAd_hBAG0Fz582mbHgMuQaSdFuKMaHcDgFUytM");
+    background-size: cover;
+}
+
+.height-control {
+    height: 80%;
+}
+
+.opacity {
+    opacity: 0.5;
+}
