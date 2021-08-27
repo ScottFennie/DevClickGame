@@ -26,12 +26,17 @@ function mine() {
 function buyWeights() {
     if (testosterone >= 10) {
         clickUpgrades.weights.quantity += 1
-        console.log(clickUpgrades.weights.quantity)
+        testosterone -= 10
+
+        draw()
+
     }
 }
 
 function draw() {
 
     document.getElementById("t-level").innerText = testosterone
+
+    document.getElementById("weights").innerText = "Weights : " + clickUpgrades.weights.quantity
 
 }
