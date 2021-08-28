@@ -16,3 +16,7 @@
 .opacity {
     opacity: 0.5;
 }
+
+.disable {
+    pointer-events: none;
+}

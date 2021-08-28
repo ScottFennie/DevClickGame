@@ -32,9 +32,23 @@ function mine() {
 
     }
 
-
-
     draw()
+}
+
+function addAuto() {
+
+    for (let key in autoUpgrades) {
+        let item = autoUpgrades[key]
+
+        testosterone += (item.quantity * item.multiplier)
+        draw()
+    }
+
+}
+
+
+function startInterval() {
+    setInterval(addAuto, 3000);
 }
 
 
@@ -56,6 +70,19 @@ function buyGfuel() {
         draw()
 
     }
+}
+
+function buySupplements() {
+    if (testosterone >= 40) {
+        autoUpgrades.supplements.quantity += 1
+        testosterone -= autoUpgrades.supplements.price
+
+
+        startInterval()
+        draw()
+
+    }
+
 }
 
 function draw() {
