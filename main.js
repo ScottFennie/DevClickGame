@@ -43,19 +43,17 @@ function addAuto() {
         testosterone += (item.quantity * item.multiplier)
         draw()
     }
-
 }
 
 
-function startInterval() {
-    setInterval(addAuto, 3000);
-}
+
 
 
 function buyWeights() {
-    if (testosterone >= 10) {
+    if (testosterone >= clickUpgrades.weights.price) {
         clickUpgrades.weights.quantity += 1
         testosterone -= clickUpgrades.weights.price
+        clickUpgrades.weights.price *= 2
 
         draw()
 
@@ -78,7 +76,7 @@ function buySupplements() {
         testosterone -= autoUpgrades.supplements.price
 
 
-        startInterval()
+
         draw()
 
     }
@@ -94,3 +92,5 @@ function draw() {
     document.getElementById("gfuel").innerText = "G-fuel : " + clickUpgrades.gfuel.quantity
 
 }
+
+setInterval(addAuto, 3000);
