@@ -56,8 +56,11 @@ function Multiplier() {
 
     for (let key in autoUpgrades) {
         let item = autoUpgrades[key]
+        if (item.quantity >= 1) {
+            multiply += item.multiplier
 
-        multiply += (item.quantity * item.multiplier)
+        }
+
     }
 }
 
@@ -66,11 +69,12 @@ function Tsec() {
 
     for (let key in clickUpgrades) {
         let item = clickUpgrades[key]
+        if (item.quantity >= 1) {
+            tsec += item.multiplier
 
-        tsec = (item.quantity * item.multiplier)
+        }
 
     }
-
 }
 
 
