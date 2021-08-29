@@ -20,3 +20,7 @@
 .disable {
     pointer-events: none;
 }
+
+.div-height {
+    max-height: 20vh;
+}
