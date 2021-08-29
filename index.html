@@ -33,7 +33,8 @@
                             <div class="row pb-3">
                                 <div class="col-4 card text-center d-flex justify-content-center opacity">
                                     <h5>Stats</h5>
-                                    <h6>Weights : 0</h6>
+                                    <h6 id="t-sec">T/Sec : 0</h6>
+                                    <h6 id="multiplier">T-Multiplier : 0</h6>
                                 </div>
                                 <div class="col-4 text center text-white">
                                     <h5 class="text-white">Testosterone</h5>
@@ -52,13 +53,13 @@
                     <div class="row ">
                         <div class="col-sm-6 d-flex flex-column py-2 text-center ">
                             <h4>Active Buttons</h4>
-                            <button onclick="buyWeights()" class="mb-2 btn btn-primary ">Buy Weights</button>
-                            <button onclick="buyGfuel()" class="btn btn-primary">Buy Gfuel</button>
+                            <button id="buy-weights" onclick="buyWeights()" class="mb-2 btn btn-primary ">Buy Weights</button>
+                            <button id="buy-gfuel" onclick="buyGfuel()" class="btn btn-primary">Buy Gfuel</button>
                         </div>
                         <div class="col-sm-6 d-flex flex-column py-2 text-center ">
                             <h4>Passive Buttons</h4>
-                            <button onclick="buySupplements()" class="mb-2 btn btn-primary">Supplements</button>
-                            <button class="btn btn-primary">2nd Upgrade</button>
+                            <button id="buy-supplements" onclick="buySupplements()" class="mb-2 btn btn-primary">Supplements</button>
+                            <button id="buy-code" onclick="buyCodeLessons()" class="btn btn-primary">Buy Code Lessons</button>
                         </div>
                     </div>
                 </div>
