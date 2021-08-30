@@ -11,20 +11,20 @@ let clickUpgrades = {
     gfuel: {
         price: 40,
         quantity: 0,
-        multiplier: 4,
+        multiplier: 2,
     }
 }
 
 let autoUpgrades = {
     supplements: {
+        price: 20,
+        quantity: 0,
+        multiplier: 10,
+    },
+    codelessons: {
         price: 30,
         quantity: 0,
         multiplier: 20,
-    },
-    codelessons: {
-        price: 100,
-        quantity: 0,
-        multiplier: 50,
     }
 }
 
@@ -62,18 +62,16 @@ function Multiplier2() {
     multiply += autoUpgrades.codelessons.multiplier
 }
 
-
 function Tsec() {
 
-    for (let key in clickUpgrades) {
-        let item = clickUpgrades[key]
-        if (item.quantity >= 1) {
-            tsec += item.multiplier
-
-        }
-
-    }
+    tsec += clickUpgrades.weights.multiplier
 }
+
+function Tsec2() {
+
+    tsec += clickUpgrades.gfuel.multiplier
+}
+
 
 
 function buyWeights() {
@@ -94,7 +92,7 @@ function buyGfuel() {
         testosterone -= clickUpgrades.gfuel.price
         clickUpgrades.gfuel.price *= 2
 
-        Tsec()
+        Tsec2()
         draw()
 
     }
@@ -149,13 +147,13 @@ function draw() {
 }
 
 function drawButtons() {
-    document.getElementById("buy-weights").innerText = "$" + clickUpgrades.weights.price
+    document.getElementById("buy-weights").innerText = "T - " + clickUpgrades.weights.price
 
-    document.getElementById("buy-gfuel").innerText = "$" + clickUpgrades.gfuel.price
+    document.getElementById("buy-gfuel").innerText = "T - " + clickUpgrades.gfuel.price
 
-    document.getElementById("buy-supplements").innerText = "$" + autoUpgrades.supplements.price
+    document.getElementById("buy-supplements").innerText = "T - " + autoUpgrades.supplements.price
 
-    document.getElementById("buy-code").innerText = "$" + autoUpgrades.codelessons.price
+    document.getElementById("buy-code").innerText = "T - " + autoUpgrades.codelessons.price
 }
 
 drawButtons()
