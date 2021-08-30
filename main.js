@@ -147,11 +147,11 @@ function draw() {
 }
 
 function drawButtons() {
-    document.getElementById("buy-weights").innerText = "Buy Weights: $" + clickUpgrades.weights.price
+    document.getElementById("buy-weights").innerText = "$" + clickUpgrades.weights.price
 
-    document.getElementById("buy-gfuel").innerText = "Buy G-fuel: $" + clickUpgrades.gfuel.price
+    document.getElementById("buy-gfuel").innerText = "$" + clickUpgrades.gfuel.price
 
-    document.getElementById("buy-supplements").innerText = "Buy Supplements: $" + autoUpgrades.supplements.price
+    document.getElementById("buy-supplements").innerText = "$" + autoUpgrades.supplements.price
 
     document.getElementById("buy-code").innerText = "$" + autoUpgrades.codelessons.price
 }
