@@ -39,19 +39,23 @@
                         <div class="container-fluid">
 
                             <div class="row pb-3">
-                                <div class="col-4 card text-center d-flex justify-content-center opacity">
+                                <div class="col-4 bg-dark card text-center text-white d-flex justify-content-center opacity">
                                     <h5>Stats</h5>
-                                    <h6 id="t-sec">T/Sec : 0</h6>
-                                    <h6 id="multiplier">T-Multiplier : 0</h6>
+                                    <h6 id="t-sec">T/(3)Sec : 0</h6>
+                                    <h6 id="multiplier">T/Click : 1</h6>
                                 </div>
-                                <div class="col-4 text center text-white">
-                                    <h5 class="text-white">Testosterone</h5>
+                                <div class="col-4 text center text-white retro">
+                                    <h5 class="text-white text-center">T-Count <i class="fa fa-heartbeat" aria-hidden="true"></i></h5>
                                     <h5 id="t-level">0</h5>
                                 </div>
-                                <div class="col-4 card text-center d-flex justify-content-center opacity">
+                                <div class="col-4 card text-center d-flex justify-content-center opacity bg-dark text-white">
                                     <h5>Inventory</h5>
-                                    <h6 id="weights">Weights : 0</h6>
-                                    <h6 id="gfuel">G-fuel : 0</h6>
+                                    <div class="d-inline">
+                                        <h6 id="weights">W : 0</h6>
+                                        <h6 id="gfuel">G : 0</h6>
+                                        <h6 id="supplements">S : 0</h6>
+                                        <h6 id="codelessons">CL : 0</h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -60,13 +64,13 @@
                 <div class="col-lg-6">
                     <div class="row ">
                         <div class="col-sm-6 d-flex flex-column py-2">
-                            <h2 class="text-white text-center">Active Buttons</h2>
+                            <h2 class="text-white text-center">Click Upgrades</h2>
                             <div class="container-fluid overflow-auto hide-bar">
                                 <div class="row flex-column div-height">
                                     <div class="col">
                                         <div class="row align-items-center ">
                                             <div class="col-6">
-                                                <h6 class="text-white pt-2 retro">(+1<i class="fa fa-heartbeat" aria-hidden="true"></i>) Weights</h6>
+                                                <h6 class="text-white pt-2 retro">(+1 <i class="fa fa-heartbeat" aria-hidden="true"></i>) Weights</h6>
                                             </div>
                                             <div class="col-6">
                                                 <button id="buy-weights" onclick="buyWeights()" class="btn btn-primary">Buy Weights</button>
@@ -76,7 +80,7 @@
                                     <div class="col">
                                         <div class="row align-items-center">
                                             <div class="col-6">
-                                                <h6 class="text-white pt-2 retro">(+1<i class="fa fa-heartbeat" aria-hidden="true"></i>) G-fuel</h6>
+                                                <h6 class="text-white pt-2 retro">(+1 <i class="fa fa-heartbeat" aria-hidden="true"></i>) G-fuel</h6>
                                             </div>
                                             <div class="col-6">
                                                 <button id="buy-gfuel" onclick="buyGfuel()" class="btn btn-primary">Buy Code Lessons</button>
@@ -94,7 +98,7 @@
                         </div>
                         <!-- Passive Buttons -->
                         <div class="col-sm-6 py-2">
-                            <h2 class=" text-white text-center">Passive Buttons</h2>
+                            <h2 class=" text-white text-center">Auto Upgrades</h2>
                             <div class="container-fluid overflow-auto hide-bar">
                                 <div class="row flex-column div-height">
                                     <div class="col">
@@ -110,7 +114,7 @@
                                     <div class="col">
                                         <div class="row align-items-center">
                                             <div class="col-6">
-                                                <h6 class="text-white pt-2 retro">(+1<i class="fa fa-heartbeat" aria-hidden="true"></i>) code lessons</h6>
+                                                <h6 class="text-white pt-2 retro">(+1<i class="fa fa-heartbeat" aria-hidden="true"></i>) Code Lessons</h6>
                                             </div>
                                             <div class="col-6">
                                                 <button id="buy-code" onclick="buyCodeLessons()" class="btn btn-primary">Buy Code Lessons</button>

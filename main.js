@@ -1,5 +1,5 @@
 let testosterone = 0
-let tsec = 0
+let tsec = 1
 let multiply = 0
 
 let clickUpgrades = {
@@ -54,14 +54,12 @@ function addAuto() {
 
 function Multiplier() {
 
-    for (let key in autoUpgrades) {
-        let item = autoUpgrades[key]
-        if (item.quantity >= 1) {
-            multiply += item.multiplier
+    multiply += autoUpgrades.supplements.multiplier
+}
 
-        }
+function Multiplier2() {
 
-    }
+    multiply += autoUpgrades.codelessons.multiplier
 }
 
 
@@ -123,7 +121,7 @@ function buyCodeLessons() {
         autoUpgrades.codelessons.price *= 2
 
 
-        Multiplier()
+        Multiplier2()
         draw()
 
     }
@@ -134,13 +132,17 @@ function draw() {
 
     document.getElementById("t-level").innerText = testosterone
 
-    document.getElementById("weights").innerText = "Weights : " + clickUpgrades.weights.quantity
+    document.getElementById("weights").innerText = "W : " + clickUpgrades.weights.quantity
 
-    document.getElementById("gfuel").innerText = "G-fuel : " + clickUpgrades.gfuel.quantity
+    document.getElementById("gfuel").innerText = "G : " + clickUpgrades.gfuel.quantity
 
-    document.getElementById("t-sec").innerText = "T/Sec : " + multiply
+    document.getElementById("supplements").innerText = "S : " + autoUpgrades.supplements.quantity
 
-    document.getElementById("multiplier").innerText = "T-Multiplier : " + tsec
+    document.getElementById("codelessons").innerText = "CL : " + autoUpgrades.codelessons.quantity
+
+    document.getElementById("t-sec").innerText = "T/(3)Sec : " + multiply
+
+    document.getElementById("multiplier").innerText = "T/Click : " + tsec
 
     drawButtons()
 
