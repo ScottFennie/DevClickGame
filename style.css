@@ -22,5 +22,47 @@
 }
 
 .div-height {
-    max-height: 20vh;
+    max-height: 100px;
+}
+
+.col-bg {
+    background-image: url("../../codeworks/Chkpt2/images/mini-card.png");
+}
+
+.card-size {
+    height: 38px;
+    width: 270px;
+}
+
+.cont {
+    position: relative;
+}
+
+.btnin {
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.hide-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.img-btn {
+    background-image: url("https://i.ibb.co/5ccGzHY/button-test.png");
+    background-size: cover;
+    background-position: center center;
+    height: 30px;
+    width: 100px;
+    border: none;
+    opacity: 1;
+}
+
+.rw-bg {
+    background-image: url("https://i.ibb.co/Hg24T89/mini-card.png");
+    background-size: cover;
+    background-position: center center;
+    width: 90%;
+    height: 90%;
 }

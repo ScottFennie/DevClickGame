@@ -153,7 +153,7 @@ function drawButtons() {
 
     document.getElementById("buy-supplements").innerText = "Buy Supplements: $" + autoUpgrades.supplements.price
 
-    document.getElementById("buy-code").innerText = "Buy Code Lessons: $" + autoUpgrades.codelessons.price
+    document.getElementById("buy-code").innerText = "$" + autoUpgrades.codelessons.price
 }
 
 drawButtons()
