@@ -1,6 +1,7 @@
 let testosterone = 0
 let tsec = 1
 let multiply = 0
+let level = 0
 
 let clickUpgrades = {
     weights: {
@@ -38,8 +39,23 @@ function mine() {
         testosterone += (item.quantity * item.multiplier)
 
     }
-
+    levelCheck()
     draw()
+}
+
+function levelCheck() {
+    if (testosterone >= 50 && level == 0) {
+        level = 1
+        changeScene()
+        Swal.fire('You moved out!!')
+    }
+}
+
+function changeScene() {
+    document.getElementById("img-target").classList.remove("bg-img")
+    document.getElementById("img-target").classList.add("bg-img2")
+    document.getElementById("location").innerText = '"Studio Apartment"'
+
 }
 
 function addAuto() {

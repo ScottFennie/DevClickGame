@@ -9,6 +9,12 @@
     background-size: cover;
 }
 
+.bg-img2 {
+    background-image: url("https://i.gifer.com/C1Cl.gif");
+    background-size: cover;
+    background-position: bottom bottom;
+}
+
 .height-control {
     height: 80%;
 }
